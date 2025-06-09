@@ -63,6 +63,7 @@ body {
   padding: 50px;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   gap: 40px;
 }
 
@@ -176,13 +177,11 @@ body {
   justify-content: center;
   align-items: center;
   color: var(--white);
-  padding: 200px;
-  width: 100%;
 }
 
 .contact-form {
-  width: 30vw;
-  padding: 0 200px 0 50px;
+  width: 800px;
+  padding: 100px;
 }
 
 .contact-info {
@@ -192,6 +191,10 @@ body {
 .contact-info-icons {
   display: flex;
   filter: brightness(0) invert(1);
+}
+
+.contact .contact-form .form-control {
+  width: 500px;
 }
 
 .icon {
