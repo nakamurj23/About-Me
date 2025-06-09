@@ -1,1 +1,150 @@
+:root {
+  --white: rgb(255, 255, 255);
+  --grey: #5c5c5c;
+  --bg: rgb(0, 0, 0);
+}
 
+body {
+  color: var(--white);
+}
+
+* {
+  font-family: "Fjalla One", sans-serif;
+}
+
+.header-img {
+  object-fit: cover;
+  object-position: 50% 50%;
+  height: 300px;
+  width: 100vw;
+}
+
+.background-image-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("images/background_image.jpg");
+  background-position: top center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.welcome-message {
+  font-size: 8rem;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 200px;
+  text-align: center;
+  color: var(--white);
+}
+
+.background-container {
+  background: var(--bg);
+}
+
+.about-me {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  padding: 150px;
+}
+
+.about-me-content {
+  display: flex;
+  padding: 50px;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-me-buttons {
+  padding: 14px 28px;
+  font-size: 1.25rem;
+  border-radius: 8px;
+}
+
+.about-img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--white);
+}
+
+.info {
+  max-width: 600px;
+}
+
+.about-me-header {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.info p {
+  line-height: 1.6;
+}
+
+.skills-header {
+  text-align: center;
+  font-size: 3rem;
+  color: var(--white);
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 50px;
+  padding: 100px;
+}
+
+.skill-icon {
+  width: 200px;
+  height: 200px;
+}
+
+.skill-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--white);
+  background-color: var(--grey);
+  padding: 30px 60px;
+  border-radius: 10%;
+}
+
+.skill-content > h2 {
+  padding-top: 25px;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  padding: 200px;
+  width: 100%;
+}
+
+.contact-form {
+  width: 30vw;
+  padding: 0 50px 0 50px;
+}
+
+.contact-info {
+  padding: 0 50px 0 50px;
+}
+
+.contact-info-icons {
+  display: flex;
+  filter: brightness(0) invert(1);
+}
+
+.icon {
+  width: 60px;
+  margin-right: 12px;
+}
