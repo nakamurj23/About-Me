@@ -12,11 +12,25 @@ body {
   font-family: "Fjalla One", sans-serif;
 }
 
+section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+
+section.visible {
+  opacity: 1;
+  transform: none;
+}
 .header-img {
   object-fit: cover;
   object-position: 50% 50%;
   height: 300px;
   width: 100vw;
+}
+
+.navbar {
+  position: fixed;
 }
 
 .background-image-container {
@@ -112,20 +126,19 @@ body {
 .carousel-control-prev,
 .carousel-control-next {
   position: absolute; /* Ensures they don't affect layout */
-  top: 50%; /* Center vertically */
-  z-index: 10; /* Ensure they are above the carousel content */
-  /* You can adjust these as needed to position arrows outside the carousel */
+  top: 50%;
+  z-index: 10;
   width: 40px;
 }
 
 .carousel-control-prev {
-  left: 0; /* Position on the left side */
-  margin-left: -75px; /* Offset to move arrow outside */
+  left: 0;
+  margin-left: -75px;
 }
 
 .carousel-control-next {
-  right: 0; /* Position on the right side */
-  margin-right: -75px; /* Offset to move arrow outside */
+  right: 0;
+  margin-right: -75px;
 }
 
 .card {
@@ -166,6 +179,11 @@ body {
   background-color: var(--grey);
   padding: 30px 60px;
   border-radius: 10%;
+  transition: transform 0.2s;
+}
+
+.skill-content:hover {
+  transform: scale(1.1);
 }
 
 .skill-content > h2 {
