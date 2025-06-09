@@ -193,10 +193,6 @@ body {
   filter: brightness(0) invert(1);
 }
 
-.contact .contact-form .form-control {
-  width: 500px;
-}
-
 .icon {
   width: 60px;
   margin-right: 12px;

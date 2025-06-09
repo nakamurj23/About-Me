@@ -2,6 +2,11 @@
 <html>
   <head>
     <title>About Me</title>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
     <link rel="stylesheet" href="styles.css" />
     <!-- CSS only -->
     <link
@@ -52,10 +57,10 @@
                 <a href="#skills-section" class="nav-link">Skills</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Projects</a>
+                <a href="#projects" class="nav-link">Projects</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Contact</a>
+                <a href="#contact" class="nav-link">Contact</a>
               </li>
             </ul>
           </div>
@@ -95,7 +100,7 @@
         </section>
         <section class="projects" id="projects">
           <h2 class="projects-header">Recent Projects</h2>
-          <div id="carouselExample" class="carousel slide">
+          <div id="carousel" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="card">
@@ -133,7 +138,7 @@
             <button
               class="carousel-control-prev"
               type="button"
-              data-bs-target="#carouselExample"
+              data-bs-target="#carousel"
               data-bs-slide="prev"
             >
               <span
@@ -145,7 +150,7 @@
             <button
               class="carousel-control-next"
               type="button"
-              data-bs-target="#carouselExample"
+              data-bs-target="#carousel"
               data-bs-slide="next"
             >
               <span
@@ -201,21 +206,31 @@
       </section>
 
       <section class="contact" id="contact">
-        <form class="contact-form">
+        <form class="contact-form" id="contact-form">
           <h2 class="form-header">Lets Chat!</h2>
           <div class="mb-3">
             <label for="email-input" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="email-input" />
+            <input
+              type="email"
+              class="form-control"
+              id="email-input"
+              name="email"
+              required
+            />
           </div>
           <div class="mb-3">
             <label for="message-input" class="form-label">Message</label>
             <textarea
               class="form-control"
               id="message-input"
+              name="message"
               rows="4"
+              required
             ></textarea>
           </div>
-          <button type="submit" class="btn btn-outline-light">Submit</button>
+          <button type="submit" class="btn btn-outline-light" id="submit-email">
+            Send
+          </button>
         </form>
         <div class="contact-info">
           <p><strong>Email:</strong> jordnakamura15@gmail.com</p>
@@ -240,5 +255,6 @@
         </div>
       </section>
     </div>
+    <script src="scripts/email.js"></script>
   </body>
 </html>
