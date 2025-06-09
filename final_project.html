@@ -9,49 +9,170 @@
       rel="stylesheet"
       crossorigin="anonymous"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Font Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Home</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarText"
-          aria-controls="navbarText"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a href="#about-me" class="nav-link">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Previous Work</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Contact</a>
-            </li>
-          </ul>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Home</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="#about-me" class="nav-link">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a href="#skills-section" class="nav-link">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-
-    <div class="about-me" id="about-me"></div>
-    <div class="previous-work" id="previous-work"></div>
-    <div class="projects" id="projects"></div>
-    <div class="contact" id="contact"></div>
+      </nav>
+    </header>
+    <div class="background-image-container">
+      <section class="welcome-page">
+        <h1 class="welcome-message">Welcome!</h1>
+      </section>
+    </div>
+    <div class="background-container">
+      <section class="about-me" id="about-me">
+        <div class="about-me-content">
+          <img
+            class="about-img"
+            src="images/me.jpeg"
+            alt="Jordan Nakamura on PSU campus"
+          />
+          <div class="info">
+            <h2 class="about-me-header">About Me</h2>
+            <p>
+              My name is Jordan Nakamura, I am an aspiring software developer
+              with my Bachelors in Computer Science from University of Portland
+              currently pursuing my Masters at Portland State Univsersity. One
+              fun fact about me is that I was originally born in Saitama, Japan
+              and raised in Honolulu, Hawaii.
+            </p>
+          </div>
+        </div>
+        <div class="about-me-buttons">
+          <a href="files/resume.pdf" class="btn btn-light btn-lg" download>
+            <i class="bi bi-download"></i> Resume
+          </a>
+        </div>
+      </section>
+      <section class="skills-section" id="skills-section">
+        <h2 class="skills-header">Technical Skills</h2>
+        <div class="skills-container">
+          <div class="skill-content">
+            <img src="images/html.png" alt="HTML" class="skill-icon" />
+            <h2>HTML</h2>
+          </div>
+          <div class="skill-content">
+            <img src="images/css.png" alt="CSS" class="skill-icon" />
+            <h2>CSS</h2>
+          </div>
+          <div class="skill-content">
+            <img
+              src="images/bootstrap.png"
+              alt="Bootstrap"
+              class="skill-icon"
+            />
+            <h2>Bootstrap</h2>
+          </div>
+          <div class="skill-content">
+            <img src="images/js.png" alt="JavaScript" class="skill-icon" />
+            <h2>JavaScript</h2>
+          </div>
+          <div class="skill-content">
+            <img src="images/python.png" alt="Python" class="skill-icon" />
+            <h2>Python</h2>
+          </div>
+          <div class="skill-content">
+            <img src="images/java.png" alt="Java" class="skill-icon" />
+            <h2>Java</h2>
+          </div>
+          <div class="skill-content">
+            <img src="images/c-sharp.png" alt="C Sharp" class="skill-icon" />
+            <h2>C#</h2>
+          </div>
+          <div class="skill-content">
+            <img src="images/bash.png" alt="Bash" class="skill-icon" />
+            <h2>Bash</h2>
+          </div>
+        </div>
+      </section>
+      <section class="projects" id="projects"></section>
+      <section class="contact" id="contact">
+        <form class="contact-form">
+          <h2 class="form-header">Lets Chat!</h2>
+          <div class="mb-3">
+            <label for="email-input" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email-input" />
+          </div>
+          <div class="mb-3">
+            <label for="message-input" class="form-label">Message</label>
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="4"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <div class="contact-info">
+          <p><strong>Email:</strong> jordnakamura15@gmail.com</p>
+          <p><strong>Phone:</strong> (123) 456-7890</p>
+          <p><strong>Location:</strong> Portland, OR</p>
+          <div class="contact-info-icons">
+            <a
+              href="https://github.com/nakamurj23"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="images/github-sign.png" alt="GitHub" class="icon" />
+            </a>
+            <a
+              href="https://linkedin.com/in/..."
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="images/linkedin.png" alt="LinkedIn" class="icon" />
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
