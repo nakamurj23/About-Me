@@ -68,30 +68,96 @@
       </section>
     </div>
     <div class="background-container">
-      <section class="about-me" id="about-me">
-        <div class="about-me-content">
-          <img
-            class="about-img"
-            src="images/me.jpeg"
-            alt="Jordan Nakamura on PSU campus"
-          />
-          <div class="info">
-            <h2 class="about-me-header">About Me</h2>
-            <p>
-              My name is Jordan Nakamura, I am an aspiring software developer
-              with my Bachelors in Computer Science from University of Portland
-              currently pursuing my Masters at Portland State Univsersity. One
-              fun fact about me is that I was originally born in Saitama, Japan
-              and raised in Honolulu, Hawaii.
-            </p>
+      <div class="section-container">
+        <section class="about-me" id="about-me">
+          <div class="about-me-content">
+            <img
+              class="about-img"
+              src="images/me.jpeg"
+              alt="Jordan Nakamura on PSU campus"
+            />
+            <div class="info">
+              <h2 class="about-me-header">About Me</h2>
+              <p>
+                My name is Jordan Nakamura, I am an aspiring software developer
+                with my Bachelors in Computer Science from University of
+                Portland currently pursuing my Masters at Portland State
+                Univsersity. One fun fact about me is that I was born in
+                Saitama, Japan and raised in Honolulu, Hawaii.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="about-me-buttons">
-          <a href="files/resume.pdf" class="btn btn-light btn-lg" download>
-            <i class="bi bi-download"></i> Resume
-          </a>
-        </div>
-      </section>
+          <div class="about-me-buttons">
+            <a href="files/resume.pdf" class="btn btn-light btn-lg" download>
+              <i class="bi bi-download"></i> Resume
+            </a>
+          </div>
+        </section>
+        <section class="projects" id="projects">
+          <h2 class="projects-header">Recent Projects</h2>
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card">
+                  <img
+                    src="images/project1.png"
+                    class="card-img-top"
+                    alt="Screenshot of Daimler Capstone Project"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Daimler Capstone</h5>
+                    <p class="card-text">
+                      Created a data manipulation tool in Python for Daimler
+                      Trucks North America.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <img
+                    src="images/project2.png"
+                    class="card-img-top"
+                    alt="Screenshot of Daimler Capstone Project"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Day/Night Image Conversion</h5>
+                    <p class="card-text">
+                      Modified implementation of Pix2PixHD trained on a custom
+                      dataset of cityscape images.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+      </div>
+
       <section class="skills-section" id="skills-section">
         <h2 class="skills-header">Technical Skills</h2>
         <div class="skills-container">
@@ -133,7 +199,7 @@
           </div>
         </div>
       </section>
-      <section class="projects" id="projects"></section>
+
       <section class="contact" id="contact">
         <form class="contact-form">
           <h2 class="form-header">Lets Chat!</h2>
@@ -145,11 +211,11 @@
             <label for="message-input" class="form-label">Message</label>
             <textarea
               class="form-control"
-              id="exampleFormControlTextarea1"
+              id="message-input"
               rows="4"
             ></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-outline-light">Submit</button>
         </form>
         <div class="contact-info">
           <p><strong>Email:</strong> jordnakamura15@gmail.com</p>

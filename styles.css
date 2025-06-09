@@ -42,6 +42,13 @@ body {
   background: var(--bg);
 }
 
+.section-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
 .about-me {
   display: flex;
   flex-direction: row;
@@ -85,6 +92,49 @@ body {
 
 .info p {
   line-height: 1.6;
+}
+
+.projects {
+  padding: 150px;
+}
+
+.projects-header {
+  color: var(--white);
+  font-size: 3rem;
+  padding: 15px;
+}
+
+.carousel {
+  width: 500px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute; /* Ensures they don't affect layout */
+  top: 50%; /* Center vertically */
+  z-index: 10; /* Ensure they are above the carousel content */
+  /* You can adjust these as needed to position arrows outside the carousel */
+  width: 40px;
+}
+
+.carousel-control-prev {
+  left: 0; /* Position on the left side */
+  margin-left: -75px; /* Offset to move arrow outside */
+}
+
+.carousel-control-next {
+  right: 0; /* Position on the right side */
+  margin-right: -75px; /* Offset to move arrow outside */
+}
+
+.card {
+  width: 500px;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 
 .skills-header {
@@ -132,7 +182,7 @@ body {
 
 .contact-form {
   width: 30vw;
-  padding: 0 50px 0 50px;
+  padding: 0 200px 0 50px;
 }
 
 .contact-info {
