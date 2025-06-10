@@ -42,7 +42,7 @@ cd final-portfolio
 
 The website is deployed using GitHub Pages:
 
-* [Deployed Website](https://nakamurj23.github.io/final-portfolio)
+* [Deployed Website](https://nakamurj23.github.io/About-Me)
 
 ## Usage
 
